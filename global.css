@@ -1,3 +1,17 @@
 body {
     background: #cccccc;
 }
+
+.title {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.buttomsContainer {
+    display: flex;
+    justify-content: center;
+}

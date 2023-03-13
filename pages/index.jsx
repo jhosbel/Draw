@@ -22,23 +22,27 @@ const Index = () => {
 
     return (
         <>
-            <h1>Hello World</h1>
-            <buttom onClick={handleClick} >Save Drawing</buttom>
-            <buttom onClick={clear} >Clear</buttom>
-            <buttom onClick={undo} >Undo</buttom>
-            <CanvasDraw
-             brushRadius={1}
-             hideGrid={false}
-             catenaryColor="red"
-             style={{border: '1px solid #000'}}
-             ref={firstCanvas}
-             />
-            
-             <CanvasDraw
-             ref={secondCanvas}
-             hideGrid={true}
-             disabled={true}
-             />
+            <h1 className='title'>Dibuja aca</h1>
+            <div className="container">
+                <CanvasDraw
+                brushRadius={1}
+                hideGrid={false}
+                catenaryColor="red"
+                style={{border: '1px solid #000'}}
+                ref={firstCanvas}
+                />
+                
+                <CanvasDraw
+                ref={secondCanvas}
+                hideGrid={true}
+                disabled={true}
+                />
+            </div>
+            <div className="buttomsContainer">
+                <buttom onClick={handleClick} >Save Drawing</buttom>
+                <buttom onClick={clear} >Clear</buttom>
+                <buttom onClick={undo} >Undo</buttom>
+            </div>
         </>
     )
 }
